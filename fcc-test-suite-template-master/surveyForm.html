@@ -33,15 +33,65 @@
                     Which option best describes your current qualification?
                 </p>
                 <select id="selectOption" name="qualification" class="form-control">
-                    <option value="Select Qualification">Select current Qualification</option>
+                    <option disabled selected value>Select current Qualification</option>
                     <option value="student">Student</option>
                     <option value="lecturer">Lecturer</option>
                     <option value="mentor">Mentor</option>
                     <option value="tutor">Tutor</option>
                     <option value="others">Others</option>
                 </select>
-                
-
+            </div>
+            <div class="form-group">
+                <p>Would you recommend Microverse training to a friend?</p>
+                <label for="label">
+                    <input type="radio" class="input-radio" name="my-recommend" checked>Definitely
+                </label>
+                <label for="label">
+                    <input type="radio" class="input-radio" name="my-recommend">Not sure
+                </label>
+                <label for="label">
+                    <input type="radio" class="input-radio" name="my-recommend">Maybe
+                </label>
+                <label for="label">
+                    <input type="radio" class="input-radio" name="my-recommend">Strongly disagree
+                </label>
+            </div>
+            <div class="form-group">
+                <p>What is your favourite feature of Microverse?</p>
+                <select name="mostLike" id="most-like"class="form-control" required>
+                    <option disabled selected value>Select an option</option>
+                    <option value="challenges">Challenges</option>
+                    <option value="project">Project</option>
+                    <option value="community">Community</option>
+                    <option value="openSource">Open Source</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <p>What would you like to see improved in Microverse? <span>(check all that apply)</span></p>
+                <label for="label">
+                    <input type="checkbox" class="input-checkbox">Front-End Project
+                </label>
+                <label for="label">
+                    <input type="checkbox" class="input-checkbox">Back-End Project
+                </label>
+                <label for="label">
+                    <input type="checkbox" class="input-checkbox">Data Visualization
+                </label>
+                <label for="label">
+                    <input type="checkbox" class="input-checkbox">Challenges
+                </label>
+                <label for="label">
+                    <input type="checkbox" class="input-checkbox">Open Source Community
+                </label>
+                <label for="label">
+                    <input type="checkbox" class="input-checkbox">Gitter Help Rooms
+                </label>
+                <label for="label">
+                    <input type="checkbox" class="input-checkbox">Videos
+                </label>
+                <label for="label">
+                    <input type="checkbox" class="input-checkbox">Additional Courses
+                </label>
             </div>
         </form>
     </div>
