@@ -16,6 +16,32 @@
         <form id="survey-form">
             <div class="form-group">
                 <label for="name" id="name-label">Name</label>
+                <input type="text" id ="name" class="form-control" placeholder="Please enter your name:" required>
+            </div>
+            <div class="form-group">
+                <label for ="email" id="email-label">E-mail</label>
+                <input type="email" id="email" class="form-control" placeholder="Please enter your email:" required>
+
+            </div>
+            <div class="form-group">
+                <label for ="number" id="number-label">Age <span class="classAge">(optional) </span></label>
+                <input type="number" id="number" class="form-control" placeholder="Please enter your Age:" max = "80" min="18" >
+
+            </div>
+            <div class="form-group">
+                <p> 
+                    Which option best describes your current qualification?
+                </p>
+                <select id="selectOption" name="qualification" class="form-control">
+                    <option value="Select Qualification">Select current Qualification</option>
+                    <option value="student">Student</option>
+                    <option value="lecturer">Lecturer</option>
+                    <option value="mentor">Mentor</option>
+                    <option value="tutor">Tutor</option>
+                    <option value="others">Others</option>
+                </select>
+                
+
             </div>
         </form>
     </div>
