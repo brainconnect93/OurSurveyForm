@@ -12,20 +12,20 @@
     <div class="container">
         <header class="header">
             <h1 id="title">Afolabi and Flory Survey Form</h1>
-            <p id="description">Thank you for taking the time to improve our project platform</p>
+            <p id="description" class="description">Thank you for taking the time to improve our project platform</p>
         </header>
         <form id="survey-form">
             <div class="form-group">
                 <label for="name" id="name-label">Name</label>
-                <input type="text" id ="name" class="form-control" placeholder="Please enter your name:" required>
+                <input type="text" name="name" id ="name" class="form-control" placeholder="Please enter your name:" required>
             </div>
             <div class="form-group">
                 <label for ="email" id="email-label">E-mail</label>
-                <input type="email" id="email" class="form-control" placeholder="Please enter your email:" required>
+                <input type="email" name="email" id="email" class="form-control" placeholder="Please enter your email:" required>
 
             </div>
             <div class="form-group">
-                <label for ="number" id="number-label">Age <span class="classAge">(optional) </span></label>
+                <label for ="number" id="number-label">Age <span class="clue">(optional) </span></label>
                 <input type="number" id="number" class="form-control" placeholder="Please enter your Age:" max = "80" min="18" >
 
             </div>
@@ -33,7 +33,7 @@
                 <p> 
                     Which option best describes your current qualification?
                 </p>
-                <select id="selectOption" name="qualification" class="form-control">
+                <select id="dropdown" name="qualification" class="form-control" required>
                     <option disabled selected value>Select current Qualification</option>
                     <option value="student">Student</option>
                     <option value="lecturer">Lecturer</option>
@@ -45,16 +45,16 @@
             <div class="form-group">
                 <p>Would you recommend Microverse training to a friend?</p>
                 <label for="label">
-                    <input type="radio" class="input-radio" name="my-recommend" checked>Definitely
+                    <input type="radio" class="input-radio" name="my-recommend" value="definitely" checked>Definitely
                 </label>
                 <label for="label">
-                    <input type="radio" class="input-radio" name="my-recommend">Not sure
+                    <input type="radio" class="input-radio" name="my-recommend" value="notsure">Not sure
                 </label>
                 <label for="label">
-                    <input type="radio" class="input-radio" name="my-recommend">Maybe
+                    <input type="radio" class="input-radio" name="my-recommend" value="maybe">Maybe
                 </label>
                 <label for="label">
-                    <input type="radio" class="input-radio" name="my-recommend">Strongly disagree
+                    <input type="radio" class="input-radio" name="my-recommend" value="stronglyDisagree">Strongly disagree
                 </label>
             </div>
             <div class="form-group">
@@ -68,37 +68,37 @@
                 </select>
             </div>
             <div class="form-group">
-                <p>What would you like to see improved in Microverse? <span>(check all that apply)</span></p>
+                <p>What would you like to see improved in Microverse? <span class="clue">(check all that apply)</span></p>
                 <label for="label">
-                    <input type="checkbox" class="input-checkbox">Front-End Project
+                    <input type="checkbox" class="input-checkbox" name="prefer" value="frontendproject">Front-End Project
                 </label>
                 <label for="label">
-                    <input type="checkbox" class="input-checkbox">Back-End Project
+                    <input type="checkbox" class="input-checkbox" name="prefer" value="backendproject">Back-End Project
                 </label>
                 <label for="label">
-                    <input type="checkbox" class="input-checkbox">Data Visualization
+                    <input type="checkbox" class="input-checkbox" name="prefer" value="data visualization">Data Visualization
                 </label>
                 <label for="label">
-                    <input type="checkbox" class="input-checkbox">Challenges
+                    <input type="checkbox" class="input-checkbox" name="prefer" value="challenges">Challenges
                 </label>
                 <label for="label">
-                    <input type="checkbox" class="input-checkbox">Open Source Community
+                    <input type="checkbox" class="input-checkbox" name="prefer" value="opensourcecommunity">Open Source Community
                 </label>
                 <label for="label">
-                    <input type="checkbox" class="input-checkbox">Gitter Help Rooms
+                    <input type="checkbox" class="input-checkbox" name="prefer" value="gitterhelprooms">Gitter Help Rooms
                 </label>
                 <label for="label">
-                    <input type="checkbox" class="input-checkbox">Videos
+                    <input type="checkbox" class="input-checkbox" name="prefer" value="videos">Videos
                 </label>
                 <label for="label">
-                    <input type="checkbox" class="input-checkbox">Additional Courses
+                    <input type="checkbox" class="input-checkbox" name="prefer" value="additonalcourse">Additional Courses
                 </label>
             </div>
             <div class="form-group">
                 <p>
                     Any comments or suggestions?
                 </p>
-                <textarea id="comments" name="comments" class="textarea" placeholder="Please enter your comments here...."></textarea>
+                <textarea id="comments" name="comments" class="input-textarea" placeholder="Please enter your comments here...."></textarea>
             </div>
             <div class="form-group">
                 <button type="submit" class="submit-button" id="submit">Submit</button>
